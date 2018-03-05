@@ -52,8 +52,8 @@ func startCmd() *cobra.Command {
 	flags := start.Flags()
 	flags.StringVar(&addr, "listen", ":8899", " http request listen port")
 	flags.StringVar(&user, "db_user", "root", "App Database User")
-	flags.StringVar(&passwd, "db_passwd", "guoshijiang858103", "App Database Passwd")
-	flags.StringVar(&ip, "db_ip", "39.108.103.32", "App Database IP")
+	flags.StringVar(&passwd, "db_passwd", "123456", "App Database Passwd")
+	flags.StringVar(&ip, "db_ip", "192.168.90.241", "App Database IP")
 	flags.StringVar(&port, "db_port", "3306", "App Database Port")
 	flags.StringVar(&dbname, "db_name", "t180", "App Database Name")
 	return start
